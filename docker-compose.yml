@@ -1,0 +1,10 @@
+version: '3.9'
+
+services:
+  php-env:
+    build: .
+    volumes:
+      - /var/www/html/vendor
+      - ./src:/var/www/html
+    ports:
+      - 9000:80
